@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+body{
+    background: rgb(165,166,168);
+background: linear-gradient(0deg, rgba(165,166,168,1) 0%, rgb(226, 241, 157) 49%, rgba(201,202,214,1) 100%);
+}
+
+.container{
+    padding: 10px 10px 10px 10px ;
+    background: rgb(175, 175, 175);
+background: linear-gradient(0deg, rgb(162, 166, 167) 0%, rgba(42,221,182,1) 8%, rgba(5,252,149,1) 31%, rgb(245, 231, 143) 96%, rgba(189,139,31,1) 100%);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-container{
+background-color: #f3e2aa;
+padding: 30px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px 0px rgb(102, 13, 13);
+}
+
+.input-control{
+border: none;
+}.form-control:focus{
+outline: none;  
+}
+.input-box{
+border: 1px #000 solid;
+border-radius: 4px;
+padding: 5px 5px 5px 5px;
+}
+.input-box:focus{
+outline: auto;
+}
+.input-box .icon-box{
+border-color: #000;       
+}
+.form-bord{
+background-color: #ffffff;
+padding: 30px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px 0px rgb(179, 165, 165);
+}
+
+.inner-addon {
+position: relative;
+}
+
+.inner-addon .glyphicon {
+position: absolute;
+padding: 7px;
+pointer-events: none;
+}
+
+
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
