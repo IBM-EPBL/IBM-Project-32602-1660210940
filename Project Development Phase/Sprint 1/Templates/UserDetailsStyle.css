@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+body{
+  width: auto;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+h1{
+  margin: 0px;
+  padding: 2% 0%;
+  background-color: rgb(248, 240, 231);
+  border-radius: 50px 20px;
+}
+
+span{
+  font-size: smaller;
+}
+
+#topnav{
+  text-align: center;
+  padding: 2% 27%;
+}
+
+#nav{
+  height: fit-content;
+  padding: 0% 10%;
+}
+
+#Details {
+  text-align: center;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem 1rem;  background-color: white;
+  box-shadow: rgb(120, 120, 120) 20px 20px 10px;
+  border-radius: 50px 20px;
+  background-color: rgb(248, 240, 231);
+}
+
+form {
+  display: flexbox;
+  text-align: center;
+  line-height: 50px;
+}
+
+.inp{
+  font-family: 'Pacifico';
+}
+
+.login{
+  margin-right: 100px;
+}
+
+.select {
+  color: rgb(106, 99, 99);
+}
+
+select {
+  color: rgb(106, 99, 99);
+}
+
+.selected {
+  color: black;
+}
+
+#ratiobtn {
+  display: flex;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 0.97rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding-right: 8%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#rtbtnTitle{
+  width: 50%;
+}
+
+#rtbtn{
+  width: 50%;
+}
+
+[type="radio"] {
+  vertical-align: middle;
+  height: 1.1rem;  
+  margin-left: 15%;
+  margin-right: 5px;
+  color: rgb(106, 99, 99);
+}
+
+[type="text"],[type="number"],[type="email"],[name="bloodgrp"],[name="pass"],[name="cnfpass"],
+button {
+  display: inline-block;
+  -webkit-appearance: none;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+  margin: 0 .5rem;
+}
+
+[type="text"],[type="number"],[type="email"],[name="bloodgrp"],[name="pass"],[name="cnfpass"] {
+  width: 100%;
+}
+
+#location {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#location input{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+[name="district"],[name="country"] {
+  margin-right: 10%;
+}
+
+#location [type="text"]{
+  width: 45%;
+}
+
+[type="text"]:active,
+[type="text"]:focus {
+  outline: 0;
+  border: 2px solid #007bffd4;
+}
+
+[type="number"]:active,
+[type="number"]:focus {
+  outline: 0;
+  border: 2px solid #007bffd4;
+}
+
+[type="email"]:active,
+[type="email"]:focus {
+  outline: 0;
+  border: 2px solid #007bffd4;
+}
+
+[name="bloodgrp"]:active,
+[name="bloodgrp"]:focus {
+  outline: 0;
+  border: 2px solid #007bffd4;
+}
+
+[type="password"]:active,
+[type="password"]:focus {
+  outline: 0;
+  border: 2px solid #007bffd4;
+}
+
+h1 {
+  color: #222;
+}
+
+b{
+  font-size: larger;
+}
+
+@media only screen and (max-width: 1080px) {
+  h1{
+    font-size: medium;
+  }
+
+  #rtbtn{
+    display: flex;
+  }
+
+  #ratiobtn{
+    padding: 2%;
+    line-height: 20px;
+  }
+
+  [type="radio"] {
+    margin-top: 1px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #ratiobtn{
+    display: block;
+  }
+}
