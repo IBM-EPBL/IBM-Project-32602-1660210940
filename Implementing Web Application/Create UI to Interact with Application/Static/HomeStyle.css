@@ -1,0 +1,195 @@
+body{
+    width: auto;
+    min-height: 100vh;
+    margin: 0px;
+    background-color: white;
+}
+
+td{
+    width: 30%;
+    text-align: center;
+    margin: 2%;
+}
+
+#Heading{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#Heading h3{
+    font-size: 20px;
+    width: 30%;
+    margin: 20px 0px;
+}
+
+#Heading .location{
+    width: 40%;
+}
+
+#area{
+    width: 40%;
+}
+
+h1{
+    margin: 0px;
+    padding: 2% 0%;
+    background-color: rgb(248, 240, 231);
+    border-radius: 50px 20px;
+}
+
+h4{
+    font-weight: 100;
+    text-align: start;
+    margin: 0%;
+    padding: 1.5% 0%;
+}
+
+#req{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+  height: 30px;
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.inp{
+    font-family: 'Pacifico';
+}
+
+#topnav{
+    text-align: center;
+    padding: 3% 10%;
+}
+
+#nav{
+    height: fit-content;
+    padding: 1% 5%;
+}
+
+#request{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#left{
+    width: 50%;
+    font-size: 30px;
+    padding: 2%;
+    margin: 1%;
+    padding-bottom: 10%;
+    text-align: center;
+    background-color: rgb(248, 240, 231);
+    box-shadow: rgb(120, 120, 120) 20px 20px 10px;
+    border-radius: 50px 20px;
+}
+
+#right{
+    width: 50%;
+    font-size: 30px;
+    padding: 2%;
+    margin: 1%;
+    padding-bottom: 10%;
+    text-align: center;
+    background-color: rgb(248, 240, 231);
+    box-shadow: rgb(120, 120, 120) 20px 20px 10px;
+    border-radius: 50px 20px;
+}
+
+#formTitle{
+    margin: 10% 5%;
+}
+
+.district{
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3{
+    margin: 0px;
+    padding-bottom: 2%;
+}
+
+#title{
+    font-family: 'Teko';
+    letter-spacing: 0.3em;
+}
+
+button{
+    font-size: 60%;
+    padding: 1% 5%;
+    border-radius: 10px;
+}
+
+#optional{
+    font-size: 80%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+@media only screen and (max-height: 1180px) {
+    #left, #right{
+        padding: 2%;
+        padding-bottom: 10%;
+    }
+
+    #left, #right, h1{
+        font-size: larger;
+    }
+
+    button{
+        font-size: smaller;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+
+    #login{
+        display: block;
+        padding: 5% 0%;
+    }
+
+    #formTitle{
+        margin: 0% 5%;
+        padding: 0%;
+    }
+
+    #left, #right{
+        width: 100%;
+    }
+
+    #left, #right, h1{
+        font-size: medium;
+    }
+
+    button{
+        font-size: smaller;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #Heading h3{
+        font-size: 15px;
+    }
+
+    #request{
+        display: block;
+    }
+}
+
+#swal2-title {
+    font-size: larger;
+}
