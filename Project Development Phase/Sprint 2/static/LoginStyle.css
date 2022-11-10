@@ -1,0 +1,208 @@
+body{
+    width: auto;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+h1{
+    margin: 0px;
+    padding: 2% 0%;
+    background-color: rgb(248, 240, 231);
+    border-radius: 50px 20px;
+}
+
+
+[type="text"],[type="password"],
+button {
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+[type="text"],[type="password"] {
+  width: 90%;
+}
+
+[type="text"]:active,
+[type="text"]:focus {
+  outline: 0;
+  border: 1px solid #007bff;
+}
+
+[type="password"]:active,
+[type="password"]:focus {
+  outline: 0;
+  border: 1px solid #007bff;
+}
+
+.inp{
+    font-family: 'Pacifico';
+}
+
+#topnav{
+    text-align: center;
+    padding: 3% 10%;
+}
+
+#nav{
+    height: fit-content;
+    padding: 2% 10%;
+}
+
+#login{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(248, 240, 231);
+    display: flex;
+    box-shadow: rgb(120, 120, 120) 20px 20px 10px;
+    border-radius: 50px 20px;
+}
+
+#left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+img{
+    width: 90%;
+    height: 30vh;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+#right{
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+}
+
+#formTitle{
+    margin: 25% 5%;
+}
+
+h3{
+    margin: 0px;
+    padding-bottom: 2%;
+}
+
+form{
+    display: block;
+    line-height: 80px;
+    padding-bottom: 5%;
+}
+
+#title{
+    font-family: 'Teko';
+    letter-spacing: 0.3em;
+}
+
+input{
+    font-size: 60%;
+    width: 70%;
+    padding: 2% 1%;
+    border-radius: 10px;
+}
+
+button{
+    font-size: 60%;
+    padding: 1% 5%;
+    border-radius: 10px;
+}
+
+#optional{
+    font-size: 80%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#NewPass, #NewAccount{
+    margin: 0% 10%;
+}
+
+@media only screen and (max-height: 1180px) {
+    #left, #right{
+        padding: 0%;
+    }
+
+    #right, h1{
+        font-size: larger;
+    }
+
+    form{
+        padding-top: 5%;
+        line-height: 50px;
+    }
+
+    input{
+        height: 100%;
+    }
+
+    button{
+        font-size: smaller;
+    }
+
+    #optional{
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+
+    #login{
+        display: block;
+        padding: 5% 0%;
+    }
+
+    img, #formTitle{
+        margin: 0% 5%;
+        padding: 0%;
+    }
+
+    #left{
+        width: 100%;
+    }
+
+    #right{
+        width: 100%;
+    }
+
+    #right, h1{
+        font-size: medium;
+    }
+
+    form{
+        padding: 0%;
+        line-height: 30px;
+    }
+
+    input{
+        height: 100%;
+    }
+
+    button{
+        font-size: smaller;
+    }
+
+    #optional{
+        display: block;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #optional{
+        text-align: left;
+        line-height: 20px;
+    }
+}
