@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='HomeStyle.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+
+    <title>Plasma Donar Application</title>
+    <style>
+        .displayCls{
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="topnav">
+        <a type="button" class="button" id="request" href="/requestpage">Request</a>
+        <h1>Plasma Donar Application</h1>
+        <a id="logout" class="button" href="/"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+    </div>
+    <div id="nav">
+        <div id="Stock">
+            <div id="left">
+                <div id="formTitle">
+                    <h3 id="title" value="Stock">Banks</h3>
+                </div>
+                <table class="worddark">
+                    <thead>
+                        <div id="availability">
+                            <div id="Heading">
+                              <th><h3 class="location">Location</h3></th>
+                              <th><h3>District</h3></th>
+                              <th><h3>Details</h3></th>
+                            </div>
+                        </div> 
+                    </thead>
+                    <tbody>
+                        {% for row in account %}
+                        <tr>
+                            <td>{{ row["LOCATION"] }}</td>
+                            <td>{{ row["DISTRICT"] }}</td>
+                            <td><button class="button" id="{{ row['ID']}}"> <a class="btn displayCls" href="{{url_for('display', name=row['ID'])}}">Details</a> </button></td>
+                        </tr>
+                        <tr></tr>
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    
+</body>
+</html>
