@@ -1,0 +1,13 @@
+.right
+{
+    display: block;
+    float: right;
+    color: blue;
+}
+.bg
+{
+    background-image: url('pexels-francesco-ungaro-281260.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
