@@ -1,0 +1,8 @@
+FROM python:3.10
+WORKDIR /app
+ADD ./app
+COPY requirements.txtx /app
+RUN python -m pip install -r requirements.txt
+RUN python -m pip install imb_db
+EXPOSE 8080
+CMD ("python","app.py")
