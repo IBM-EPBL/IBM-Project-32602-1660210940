@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='RegisterStyle.css')}}" />
+
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+
+    <title>Plasma Donar Application</title>
+    <style>
+        inp{
+            color:grey;
+        }
+
+        #sel{
+            /* height: 29px;
+            padding:5px; */
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="topnav">
+        <h1>Plasma Donar Application</h1>
+    </div>
+    <div id="nav">
+        <div id="register">
+            <div id="left">
+                <img id="image" src="{{regImg}}">
+            </div>
+            <div id="right">
+                <div id="formTitle">
+                    <h3 id="title" value="Login">Register</h3>
+                    <form method="post" id="form1" action="/register">
+                        <input  name="username" id="userName" class="inp" type="text" placeholder="Enter a Name..." required><br>
+                        <input name="email" id="mailId" class="inp" type="email" placeholder="Enter a Mail ID..." required><br>
+                        <input name="phone_number" id="mobileNumber" class="inp" type="text" placeholder="Enter Your Phone Number..." required><br>
+                        <input name="city" id="city" class="inp" type="text" placeholder="Enter Your City..." required><br>
+
+                        <select  name="infect" class="inp1" id="sel">
+                            <option value="select" >Select COVID Infection status</option>
+                             <option value="infected">Infected</option>
+                             <option value="uninfected">Uninfected</option>
+                        </select> <br>
+
+                        <select name="blood" class="inp1" id="sel">
+                            <option value="select" >Choose Your Blood Group</option>
+                            <option value="O Positive">O Positive</option>
+                            <option value="A Positive">A Positive</option>
+                            <option value="B Positive">B Positive</option>
+                            <option value="AB Positive">AB Positive</option>
+                            <option value="O Negative">O Negative</option>
+                            <option value="A Negative">A Negative</option>
+                            <option value="B Negative">B Negative</option>
+                            <option value="AB Negative">AB Negative</option>
+                        </select><br>
+
+                        <input name="password" id="password" class="inp" type="password" placeholder="Enter Your Password" required><br>
+                        <input id="cnfpassword" class="inp" type="password" placeholder="Re-Enter a Password..." required><br>
+                        <button id="submitBtn" type="submit">Submit</button>
+                    </form>
+                    <div id="optional">
+                        <a id="guest" href="/loginpage" style="text-decoration: none; color:black;">Already have an account?</a>
+                    </div>
+                    <div class="alertmsg">
+                        {{msg}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="RegisterScript.js"></script>
+</body>
+</html>

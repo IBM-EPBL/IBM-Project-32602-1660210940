@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='RequestStyle.css')}}" />
+
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+
+    <title>Plasma Donar Application</title>
+
+</head>
+<body>
+    <div id="topnav">
+        <h1>Plasma Donar Application</h1>
+        <a type="button" class="button" id="" href="/home">Back</a>
+    </div>
+    <div id="nav">
+        <div id="request">
+                <div id="formTitle">
+                    <h3 id="title" value="Request">Request</h3>
+                    <form method="post" id="form1" action="/alertmail">
+                        <input id="name" name="name" class="inp" type="text" placeholder="Enter your Name..." required><br>
+                        <input id="mail" name="mail" class="inp" type="text" placeholder="Enter your email..." required><br>
+                        <input id="contact" name="contact" class="inp" type="text" placeholder="Enter your Mobile Number..." required><br>
+                        <select  name="location" class="inp1" id="">
+                            <option value="select" >Select Location</option>
+                             <option value="B1">Government Headquarters Hospital,Tenkasi</option>
+                             <option value="B2">Government Hospital, Sankarankovil</option>
+                             <option value="B3">Government Hospital, Ambasamudram</option>
+                             <option value="B4">Government Medical College Hospital, Tirunelveli</option>
+                             <option value="B5">Government Headquarters Hospital, Kovilpatti</option>
+                             <option value="B6">Government Medical College Hospital, Tuticorin</option>
+                        </select>
+                        <br>
+                        <select  name="bloodgroup" class="inp1" id="">
+                            <option value="select" >Select Blood Group</option>
+                             <option value="O Positive">O Positive</option>
+                             <option value="A Positive">A Positive</option>
+                             <option value="B Positive">B Positive</option>
+                             <option value="AB Positive">AB Positive</option>
+                             <option value="O Negative">O Negative</option>
+                             <option value="A Negative">A Negative</option>
+                             <option value="B Negative">B Negative</option>
+                             <option value="AB Negative">AB Negative</option>
+                        </select>
+                        <input id="unit" name="unit" class="inp" type="number" placeholder="Enter Number of Units..." required><br>
+                        <button id="submitBtn" type="submit">Submit</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
