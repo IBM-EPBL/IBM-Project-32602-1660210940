@@ -1,0 +1,203 @@
+body{
+    width: auto;
+    min-height: 100vh;
+    margin: 0px;
+    background-color: white;
+}
+
+h1{
+    margin-left : 500px;
+}
+
+[type="text"],[type="number"],
+button {
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+[type="text"],[type="number"] {
+  width: 90%;
+}
+
+[type="text"]:active,
+[type="text"]:focus {
+  outline: 0;
+  border: 1px solid #007bff;
+}
+
+[type="number"]:active,
+[type="number"]:focus {
+  outline: 0;
+  border: 1px solid #007bff;
+}
+
+.inp{
+    font-family: 'Times New Roman';
+    height: 5px;
+}
+
+#topnav{
+    display: flex;
+    text-align: center;
+    padding: 1% 4%;
+    margin: 0%;
+    border-radius: 50px 20px;
+}
+
+#nav{
+    height: fit-content;
+    padding: 2% 10%;
+}
+
+#request{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(248, 240, 231);
+    display: flex;
+    box-shadow: rgb(120, 120, 120) 20px 20px 10px;
+    border-radius: 50px 20px;
+}
+#formTitle{
+    text-align: center;
+    width: 80%;
+}
+
+h3{
+    margin: 0px;
+}
+
+form{
+    display: block;
+    line-height: 80px;
+    margin-left: 20%;
+
+}
+
+#title{
+    font-family: 'Teko';
+    letter-spacing: 0.3em;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+.button {
+    height: 35px;
+    margin-left: 350px;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 0;
+    padding-right: 1%;
+  }
+  
+  .button {
+    text-decoration: none;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+  }
+input{
+    font-size: 100%;
+    width: 70%;
+    padding: 2% 1%;
+    border-radius: 10px;
+}
+select{
+        font-size: 100%;
+        width: 93%;
+        padding: 2% 1%;
+        border-radius: 10px;
+}
+
+button{
+    font-size: 60%;
+    padding: 1% 5%;
+    border-radius: 10px;
+}
+
+#optional{
+    font-size: 80%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#guest, #Login{
+    margin: 0% 10%;
+}
+
+@media only screen and (max-height: 1180px) {
+    #left, #right{
+        padding: 0%;
+    }
+
+    #right, h1{
+        font-size: larger;
+    }
+
+    form{
+        padding-top: 5%;
+        line-height: 50px;
+    }
+
+    input, select{
+        height: 100%;
+    }
+
+    button{
+        font-size: smaller;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+
+    #login{
+        display: block;
+        padding: 5% 0%;
+    }
+
+    img, #formTitle{
+        margin: 0% 5%;
+        padding: 0%;
+    }
+
+    #left{
+        width: 100%;
+    }
+
+    #right{
+        width: 100%;
+    }
+
+    #right, h1{
+        font-size: medium;
+    }
+
+    form{
+        padding: 0%;
+        line-height: 30px;
+    }
+
+    input,select{
+        height: 100%;
+    }
+
+    button{
+        font-size: smaller;
+    }
+}
+
+#swal2-title {
+    font-size: larger;
+}
