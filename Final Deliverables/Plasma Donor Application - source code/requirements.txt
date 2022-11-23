@@ -1,0 +1,18 @@
+# # Flask 
+# # render_template
+# # request
+# # redirect
+# # url_for
+# # session
+# # ibm_db
+# # re
+# # os
+# # smtplib
+# # ssl
+# # MIMEMultipart
+# # MIMEText
+# # pandas
+# # datetime
+
+Flask
+ibm_db
